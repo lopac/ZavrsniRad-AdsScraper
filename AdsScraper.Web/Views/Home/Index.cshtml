@@ -1,0 +1,79 @@
+﻿ @model AdsScraper.Web.ViewModels.CarPickerViewModel
+@{
+    ViewBag.Title = "Početna";
+}
+
+<div class="car-input row">
+
+    <div class="col-md-6">
+        <div class="form-group">
+            <label class="control-label text-uppercase">Marka</label>
+            @Html.DropDownList("list", Model.Manufacturers, new {@class = "form-control input-sm", id = "manufacturers-list"})
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Model</label>
+            <select class="form-control input-sm" id="models-list" autocomplete="off">
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Godina proizvodnje</label>
+            @Html.DropDownList("list", Model.MakeYear, new {@class = "form-control input-sm", id = "years-list"})
+        </div>
+
+        <div class="form-group">
+            <label class="control-label text-uppercase">Prijeđeni kilometri</label>
+            <input class="form-control input-sm" id="kilometers" type="number" value="0">
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Broj vlasnika</label>
+            @Html.DropDownList("list", Model.Owners, new {@class = "form-control input-sm", id = "owners-list"})
+        </div>
+        <div class="form-group">
+
+            <label class="control-label text-uppercase">
+                Registriran? &nbsp;
+                <input class="checkbox" type="checkbox" id="is-reg">
+            </label>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <div class="form-group">
+            <label class="control-label text-uppercase">Motor</label>
+            @Html.DropDownList("list", Model.EngineTypes, new {@class = "form-control input-sm", id = "engines-list"})
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Volumen</label>
+            <input class="form-control input-sm" id="volume" type="number" value="0">
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Snaga</label>
+            <input class="form-control input-sm" id="power" type="number" value="0">
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Mjenjač</label>
+            @Html.DropDownList("list", Model.Gearboxes, new {@class = "form-control input-sm"})
+        </div>
+        <div class="form-group">
+            <label class="control-label text-uppercase">Broj brzina</label>
+            @Html.DropDownList("list", Model.GearsCount, new {@class = "form-control input-sm", id = "gears-list"})
+        </div>
+
+        <div class="form-group">
+            <label class="control-label text-uppercase">
+                Plin? &nbsp;
+                <input class="checkbox" type="checkbox" id="has-gas">
+            </label>
+        </div>
+
+
+    </div>
+
+    <h4 id="price" class="lead" style="display: none;"></h4>
+
+    <div class="form-group">
+        <button id="fetch-btn" class="btn btn-gold btn-block">Dohvati cijenu</button>
+    </div>
+</div>
+
+@Scripts.Render("~/Scripts/app.js")

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AdsScraper.Desktop.MainForm">
+    <Position X="5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAIABAAAgGAAAACAAAAAAAAAAAAEAAAABA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AdsScraper.Desktop.Logic.AdsScraper">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAQAAAIAAAAAAAAAACAAAAEQAAAAAAAAAA=</HashCode>
+      <FileName>Logic\AdsScraper.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="AdsScraper.Desktop.Interfaces.IAdsScraper">
+    <Position X="3" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAdsScraper.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AdsScraper.Desktop.Interfaces.IEventLogForm">
+    <Position X="5" Y="2" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAgAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Interfaces\IEventLogForm.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
